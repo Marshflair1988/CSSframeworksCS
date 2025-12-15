@@ -1,16 +1,20 @@
-# SocialConnect
+## SocialConnect
 
 A modern social media platform built with HTML, Tailwind CSS, and JavaScript. This project features a responsive design with authentication pages, a feed page, and a profile page.
 
 ## Features
 
-- Responsive design that works on mobile and desktop
-- Authentication system (Login/Register)
-- Form validation
-- Modern UI with Tailwind CSS
-- Interactive navigation
-- Profile management
-- Social feed with post creation and interaction
+- **Responsive layout** that works on mobile, tablet, and desktop
+- **Authentication UI** (Login/Register) with tabbed switching
+- **Modern styling** using Tailwind CSS and a gradient background hero
+- **Form validation** with inline error messages and success states
+- **Improved UX**:
+  - Show/hide password toggles on all password fields
+  - Submit buttons disabled until the form is valid
+  - Remember-me helper text for clearer security guidance
+- **Interactive navigation** on feed and profile pages
+- **Profile management UI**
+- **Social feed** with post creation and interaction elements
 
 ## Prerequisites
 
@@ -41,9 +45,10 @@ npm install
 CSSframeworksCS/
 ├── css/
 │   ├── input.css
-│   └── style.css
+│   └── style.css          # compiled Tailwind CSS
 ├── js/
-│   └── script.js
+│   ├── script.js          # auth page validation + interactions
+│   └── mobilenav.js       # mobile navigation toggle for feed/profile
 ├── feed/
 │   └── index.html
 ├── profile/
@@ -51,7 +56,13 @@ CSSframeworksCS/
 ├── images/
 │   ├── Avatar.png
 │   ├── Book.jpg
-│   └── Hiking.jpg
+│   ├── Hiking.jpg
+│   ├── conference1.jpg
+│   ├── conference2.jpg
+│   ├── conference3.jpg
+│   ├── conference4.jpg
+│   ├── figma-design-systems-1024x576.png
+│   └── website.jpg
 ├── index.html
 ├── package.json
 └── tailwind.config.js
@@ -102,7 +113,7 @@ The project is compatible with:
 
 ## File Descriptions
 
-- `index.html`: Main authentication page with login/register forms
+- `index.html`: Main authentication page with login/register tabs, gradient background, and enhanced validation
 - `feed/index.html`: Social feed page showing posts and interactions
 - `profile/index.html`: User profile page with stats and information
 - `css/input.css`: Source CSS file with Tailwind directives
